@@ -6,7 +6,7 @@ from toolhouse import Toolhouse
 from groq import Groq
 from llama_index.core import SQLDatabase
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.llms.groq import Groq
+#from llama_index.llms.groq import Groq
 from llama_index.core.query_engine import NLSQLTableQueryEngine
 
 # Carica le variabili di ambiente dal file .env
