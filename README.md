@@ -19,14 +19,14 @@ With Aletrly, artificial intelligence is not just about technological innovation
    ```bash
    python3 -m venv ~/venv/Ai
 
-2. **Activate venv
+2. **Activate venv**
    ```bash
 	source ~/venv/Ai/bin/activate
 
-3. **Install dependencys
+3. **Install dependencys**
    ```bash
 	pip install -r requirements.txt
 
-4. **Run backend
+4. **Run backend**
    ```bash
 	python3 Backend.py 
