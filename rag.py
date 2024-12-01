@@ -131,4 +131,3 @@ response = query_engine.query(
 )
 
 print(str(response))
-
