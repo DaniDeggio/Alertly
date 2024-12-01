@@ -85,7 +85,6 @@ def inserisci_segnalazione(coordinate, tematica, contenuto):
     cursor.execute(insert_query, (coordinate, tematica, contenuto))
     conn.commit()
     conn.close()
-
 # Endpoint per aggiungere una segnalazione
 @app.route('/segnalazione', methods=['POST'])
 def add_segnalazione():
