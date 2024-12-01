@@ -114,15 +114,6 @@ def get_segnalazioni():
     segnalazioni = [dict(row) for row in rows]  # Converti in formato JSON
     return jsonify(segnalazioni)
 
-# Funzione per eseguire una query SQL diretta tramite SQLite
-#def execute_sql_query(query):
-#    conn = connect_db()
-#    cursor = conn.cursor()
-#    cursor.execute(query)
-#    result = cursor.fetchall()
-#    conn.close()
-#    return result
-
 # Endpoint per fare domande al sistema tramite NLSQL
 @app.route('/pa/query', methods=['POST'])
 def pa_query():
