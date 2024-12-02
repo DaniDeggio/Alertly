@@ -30,3 +30,16 @@ With Aletrly, artificial intelligence is not just about technological innovation
 4. **Run backend**
    ```bash
 	python3 Backend.py 
+
+
+### Frontend Setup
+
+   Run the following command:
+
+1. **Install dependencys**  
+   ```bash
+   npm i
+
+2. **Run frontend**
+   ```bash
+	npm run dev 
