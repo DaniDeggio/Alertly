@@ -8,15 +8,18 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.query_engine import NLSQLTableQueryEngine
 from sqlalchemy import create_engine
 from llama_index.llms.groq import Groq
+from flask_cors import CORS
 
 # Carica le variabili di ambiente dal file .env
 load_dotenv()
+
 
 # Configurazione del database
 DATABASE = 'segnalazioni.db'
 
 # Setup di Flask per il backend
 app = Flask(__name__)
+CORS(app)
 
 # Setup dei client per Groq e Toolhouse
 client = Groq(model="llama-3.1-70b-versatile", api_key=os.environ.get('GROQ_API_KEY'))

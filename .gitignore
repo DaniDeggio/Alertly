@@ -1,0 +1,8 @@
+# Escludi tutti i file .env ovunque si trovino
+**/*.env
+
+# Escludi anche file di log
+*.log
+
+# Escludi la directory node_modules
+node_modules/

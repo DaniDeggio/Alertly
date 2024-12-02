@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Layout from '../components/layout'
-
 export default function ReportPage() {
   const [report, setReport] = useState('')
   const [tematica, setTematica] = useState('')
