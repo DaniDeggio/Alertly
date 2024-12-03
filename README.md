@@ -29,7 +29,7 @@ With Aletrly, artificial intelligence is not just about technological innovation
 
 4. **Run backend**
    ```bash
-	python3 Backend.py 
+	python3 backend.py 
 
 
 ### Frontend Setup
