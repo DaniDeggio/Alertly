@@ -2,7 +2,6 @@ import os
 import sqlite3
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
-from toolhouse import Toolhouse
 from llama_index.core import SQLDatabase
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.query_engine import NLSQLTableQueryEngine
@@ -21,11 +20,8 @@ DATABASE = 'segnalazioni.db'
 app = Flask(__name__)
 CORS(app)
 
-# Setup dei client per Groq e Toolhouse
 client = Groq(model="llama-3.1-70b-versatile", api_key=os.environ.get('GROQ_API_KEY'))
-th = Toolhouse()
 
-# Modello Llama 3.1 fine-tuned per l'uso con Toolhouse
 MODEL = "llama3-groq-70b-8192-tool-use-preview"
 
 # Funzione per connettersi al database SQLite usando SQLAlchemy
